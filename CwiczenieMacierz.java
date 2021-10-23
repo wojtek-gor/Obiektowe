@@ -66,14 +66,19 @@ public class CwiczenieMacierz {
         }
         System.out.print("\n");
     }
-//    public static void iloczynMacierzy(int[][] tab, int[][] tab2, int[][] tab3, int a, int b, int c )
-//    {
-//        for(int i=0;i<a;i++)
-//        {
-//            for(int j=0;j<b;j++)
-//            {
-//                for(int k=0,l=0;k<b,l<a)
-//            }
-//        }
-//    }
+    public static void iloczynMacierzy(int[][] tab, int[][] tab2, int[][] tab3, int a, int b, int c )
+    {
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<c;j++)
+            {
+                int suma=0;
+                for(int k=0;k<b;k++)
+                {
+                    suma+=tab[i][k]*tab2[k][j];
+                }
+                tab3[i][j]=suma;
+            }
+        }
+    }
 }
