@@ -18,7 +18,7 @@ public class napisy1e {
     }
     public  static int[] where(String str, String subStr)
     {
-        int[] tab = new int[str.length()/subStr.length()];
+        int[] tab = new int[str.length()/subStr.length()+2];
         int i=0;
         int j=0;
         for(j=0;j<str.length();j++)
