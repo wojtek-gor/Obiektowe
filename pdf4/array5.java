@@ -13,7 +13,7 @@ public class array5 {
     }
     public static void reverse(ArrayList<Integer> a)
     {
-        for(int i=a.size()-1, j=0; i>=j;i--,j++)
+        for(int i=a.size()-1, j=0; i>j;i--,j++)
         {
             int bufor = a.get(i);
             a.set(i, a.get(j));
